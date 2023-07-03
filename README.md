@@ -1,1 +1,1 @@
-# -CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro
+# CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro
