@@ -1,0 +1,15 @@
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/challenge03_microservices
+    username: postgres
+    password: password
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+server:
+  port: 8081
+
