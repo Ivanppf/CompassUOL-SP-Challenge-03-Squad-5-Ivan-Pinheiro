@@ -7,7 +7,7 @@ import java.util.List;
 @Data
 public class ProductDTO {
 
-    private int ID;
+    private int id;
     private String description;
     private String name;
     private String imgUrl;

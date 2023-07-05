@@ -8,6 +8,10 @@ import br.com.compassuol.pb.challenge.msproducts.repository.CategoryRepository;
 import br.com.compassuol.pb.challenge.msproducts.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,27 +29,28 @@ public class ProductService {
         return productDTO;
     }
 
-    public List<ProductDTO> findAllProducts() {
+    public List<ProductDTO> findAllProducts(int page, int linesPerPage, String direction, String orderBy) {
 
-        List<Product> products = productRepository.findAll();
+        Sort sort = direction.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(orderBy).ascending() :
+                Sort.by(orderBy).descending();
+        Pageable pageable = PageRequest.of(page, linesPerPage, sort);
+        Page<Product> products = productRepository.findAll(pageable);
         List<ProductDTO> productDTOS = products.stream()
-                .map((product -> {
-                    return mapToProductDto(product);
-                })).toList();
+                .map((this::mapToProductDto)).toList();
         return productDTOS;
     }
 
     public ProductDTO addProduct(ProductDTO productDTO) {
         Product savedProduct = productRepository.save(mapToProduct(productDTO));
-        productDTO.setID(savedProduct.getID());
+        productDTO.setId(savedProduct.getId());
         return productDTO;
     }
 
     public ProductDTO updateProduct(int id, ProductDTO productDTO) {
         Product oldProduct = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product with id " + id + " not found"));
         Product product = mapToProduct(productDTO);
+        product.setId(oldProduct.getId());
         ProductDTO savedProductDTO = mapToProductDto(productRepository.save(product));
-        savedProductDTO.setID(oldProduct.getID());
         return savedProductDTO;
     }
 
@@ -63,7 +68,7 @@ public class ProductService {
                 .stream()
                 .map((category) -> {
             CategoryDTO categoryDTO = new CategoryDTO();
-            categoryDTO.setID(category.getID());
+            categoryDTO.setID(category.getId());
             return categoryDTO;
         }).toList();
         productDTO.setCategories(categories);

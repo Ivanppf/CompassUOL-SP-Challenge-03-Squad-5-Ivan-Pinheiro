@@ -27,7 +27,7 @@ public class CategoryService {
 
     public Category updateCategory(int id, Category newCategory) {
         Category oldCategory = categoryRepository.findById(id).orElseThrow(() -> new RuntimeException("Category with id " + id + " not found"));
-        newCategory.setID(oldCategory.getID());
+        newCategory.setId(oldCategory.getId());
         return categoryRepository.save(newCategory);
     }
 

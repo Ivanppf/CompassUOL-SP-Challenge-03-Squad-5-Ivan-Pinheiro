@@ -22,14 +22,18 @@ public class ProductController {
         return new ResponseEntity<>(productService.findProduct(id), HttpStatus.OK);
     }
 
-    @GetMapping
-    public ResponseEntity<List<ProductDTO>> findAllProducts() { //change to put requestParam
-        return new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
+    @GetMapping()
+    public ResponseEntity<List<ProductDTO>> findAllProducts(
+            @RequestParam(value = "page", defaultValue = "0", required = false) int page,
+            @RequestParam(value = "linesPerPage", defaultValue = "10", required = false) int linesPerPage,
+            @RequestParam(value = "direction", defaultValue = "ASC", required = false) String direction,
+            @RequestParam(value = "orderBy", defaultValue = "id", required = false) String orderBy
+    ) {
+        return new ResponseEntity<>(productService.findAllProducts(page, linesPerPage, direction, orderBy), HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<ProductDTO> addProduct(@Valid @RequestBody ProductDTO productDTO) {
-        System.out.println(productDTO);
         return new ResponseEntity<>(productService.addProduct(productDTO), HttpStatus.CREATED);
     }
 

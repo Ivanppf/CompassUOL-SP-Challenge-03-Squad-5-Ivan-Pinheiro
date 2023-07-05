@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
-      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/controller/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2S4d9BFkA6DZJmklXMLnCF9EOhJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,6 +61,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanp/Documents/IntelliJ/CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;2817b78b926db147cd79c681b73786af&quot;
   }
 }</component>
@@ -74,7 +71,7 @@
       <recent name="br.com.compassuol.pb.challenge.msproducts.entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.MsProductsApplication">
     <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ms-apiGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />
@@ -103,8 +100,17 @@
       <workItem from="1688410558354" duration="44000" />
       <workItem from="1688417363327" duration="317000" />
       <workItem from="1688471993049" duration="21000" />
-      <workItem from="1688486340211" duration="10362000" />
+      <workItem from="1688486340211" duration="13314000" />
+      <workItem from="1688573829735" duration="1960000" />
     </task>
+    <task id="LOCAL-00001" summary="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
+      <created>1688496938413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496938413</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
