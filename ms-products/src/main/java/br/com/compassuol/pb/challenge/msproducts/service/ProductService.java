@@ -42,16 +42,15 @@ public class ProductService {
 
     public ProductDTO addProduct(ProductDTO productDTO) {
         Product savedProduct = productRepository.save(mapToProduct(productDTO));
-        productDTO.setId(savedProduct.getId());
-        return productDTO;
+        return mapToProductDto(savedProduct);
     }
 
-    public ProductDTO updateProduct(int id, ProductDTO productDTO) {
+    public Product updateProduct(int id, ProductDTO productDTO) {
         Product oldProduct = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product with id " + id + " not found"));
         Product product = mapToProduct(productDTO);
         product.setId(oldProduct.getId());
-        ProductDTO savedProductDTO = mapToProductDto(productRepository.save(product));
-        return savedProductDTO;
+        product.setDate(oldProduct.getDate());
+        return productRepository.save(product);
     }
 
     public String deleteProduct(int id) {

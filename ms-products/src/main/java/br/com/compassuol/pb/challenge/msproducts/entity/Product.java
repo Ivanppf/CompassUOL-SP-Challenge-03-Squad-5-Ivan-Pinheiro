@@ -1,22 +1,26 @@
 package br.com.compassuol.pb.challenge.msproducts.entity;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
 @Table(name = "product")
 @Data
-@JsonPropertyOrder() //ordenação
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Past
+    @CreationTimestamp
+    private LocalDateTime date;
     @NotBlank
     private String description;
     @NotBlank

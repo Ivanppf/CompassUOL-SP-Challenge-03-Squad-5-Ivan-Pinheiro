@@ -1,6 +1,7 @@
 package br.com.compassuol.pb.challenge.msproducts.controller;
 
 import br.com.compassuol.pb.challenge.msproducts.dto.ProductDTO;
+import br.com.compassuol.pb.challenge.msproducts.entity.Product;
 import br.com.compassuol.pb.challenge.msproducts.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -38,9 +39,9 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ProductDTO> updateProduct(@PathVariable int id, @Valid @RequestBody ProductDTO productDTO) {
-        ProductDTO productDTO1 = productService.updateProduct(id, productDTO);
-        return new ResponseEntity<>(productDTO1, HttpStatus.OK);
+    public ResponseEntity<Product> updateProduct(@PathVariable int id, @Valid @RequestBody ProductDTO productDTO) {
+        Product product = productService.updateProduct(id, productDTO);
+        return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
