@@ -24,17 +24,6 @@ public class CustomerService {
         return customerDTO;
     }
 
-    public List<CustomerDTO> findAllCustomers() {
-        List<CustomerDTO> customerDTOS = customerRepository.findAll()
-                .stream()
-                .map(customer -> {
-                    CustomerDTO customerDTO = new CustomerDTO();
-                    BeanUtils.copyProperties(customer, customerDTO);
-                    return customerDTO;
-                }).toList();
-        return customerDTOS;
-    }
-
     public CustomerDTO addCustomer(Customer customer) {
         if(customerRepository.count() == 0)
             customer.setRoles(List.of(roleRepository.findByNameIgnoreCase("admin")));
@@ -55,13 +44,5 @@ public class CustomerService {
         customerRepository.save(customer);
         return customerDTO;
     }
-
-    public String deleteCustomer(int id) {
-        customerRepository.findById(id).orElseThrow(() -> new RuntimeException("Customer with id " + id + " not found"));
-        customerRepository.deleteById(id);
-        return "Customer with id " + id + " deleted successfully";
-    }
-
-
 
 }

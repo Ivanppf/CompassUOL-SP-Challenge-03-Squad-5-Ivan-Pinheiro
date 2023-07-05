@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="fixed on service: update method, pagination">
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
+    <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="endpoint customer and role created with relation table">
+      <change afterPath="$PROJECT_DIR$/ms-products/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +98,7 @@
       <workItem from="1688417363327" duration="317000" />
       <workItem from="1688471993049" duration="21000" />
       <workItem from="1688486340211" duration="13314000" />
-      <workItem from="1688573829735" duration="9615000" />
+      <workItem from="1688573829735" duration="11788000" />
     </task>
     <task id="LOCAL-00001" summary="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
       <created>1688496938413</created>
@@ -121,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688575909961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="endpoint customer and role created with relation table">
+      <created>1688584102829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688584102829</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +189,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional" />
     <MESSAGE value="fixed on service: update method, pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed on service: update method, pagination" />
+    <MESSAGE value="endpoint customer and role created with relation table" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint customer and role created with relation table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -198,11 +199,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

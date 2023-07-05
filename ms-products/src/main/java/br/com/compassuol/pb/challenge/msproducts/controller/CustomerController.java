@@ -23,11 +23,6 @@ public class CustomerController {
         return new ResponseEntity<>(customerService.findCustomer(id), HttpStatus.OK);
     }
 
-    @GetMapping
-    public ResponseEntity<List<CustomerDTO>> findAllCustomers() {
-        return new ResponseEntity<>(customerService.findAllCustomers(), HttpStatus.OK);
-    }
-
     @PostMapping
     public ResponseEntity<CustomerDTO> addCustomer(@Valid @RequestBody Customer customer) {
         return new ResponseEntity<>(customerService.addCustomer(customer), HttpStatus.CREATED);
@@ -39,8 +34,4 @@ public class CustomerController {
         return new ResponseEntity<>(customer, HttpStatus.OK);
     }
 
-    @DeleteMapping("{id}")
-    public ResponseEntity<String> deleteCustomer(@PathVariable int id) {
-        return new ResponseEntity<>(customerService.deleteCustomer(id), HttpStatus.OK);
-    }
 }
