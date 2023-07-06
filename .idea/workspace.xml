@@ -6,16 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="criando classe Product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="endpoint customer and role created with relation table">
+      <change afterPath="$PROJECT_DIR$/ms-products/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev_notification" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +46,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2S4d9BFkA6DZJmklXMLnCF9EOhJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,12 +63,19 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanp/Documents/IntelliJ/CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;b1e49bc6f9c7f81c67736c667b1c8ddf&quot;
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2817b78b926db147cd79c681b73786af&quot;
   }
 }</component>
   <component name="RunManager">
@@ -65,6 +101,28 @@
       </method>
     </configuration>
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.compassuol.pb.challenge.msproducts.entity" />
+      <recent name="br.com.compassuol.pb.challenge.msproducts.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MsProductsApplication">
+    <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-apiGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-products" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msproducts.MsProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,7 +135,33 @@
       <workItem from="1688410058383" duration="217000" />
       <workItem from="1688410558354" duration="44000" />
       <workItem from="1688425791431" duration="1301000" />
+      <workItem from="1688417363327" duration="317000" />
+      <workItem from="1688471993049" duration="21000" />
+      <workItem from="1688486340211" duration="13314000" />
+      <workItem from="1688573829735" duration="11788000" />
     </task>
+    <task id="LOCAL-00001" summary="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
+      <created>1688496938413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496938413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed on service: update method, pagination">
+      <created>1688575909961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688575909961</updated>
+    </task>
+    <task id="LOCAL-00003" summary="endpoint customer and role created with relation table">
+      <created>1688584102829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688584102829</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +181,80 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="criando classe Product" />
     <option name="LAST_COMMIT_MESSAGE" value="criando classe Product" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dev_products" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="719cbfdf-189c-460f-ada7-504194175fc2">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="e3ac5b42-28b9-46e0-a785-290a2c2a19b9">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional" />
+    <MESSAGE value="fixed on service: update method, pagination" />
+    <MESSAGE value="endpoint customer and role created with relation table" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint customer and role created with relation table" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
