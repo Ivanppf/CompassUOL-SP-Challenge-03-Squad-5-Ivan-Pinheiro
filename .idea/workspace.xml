@@ -4,6 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="f79a9612-edf0-4b5b-9f2a-c94e8db1d537" name="Changes" comment="configurando propriedades basicas do gateway">
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/controller/NotificationControlelr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/models/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/MsNotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/MsNotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
     <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="endpoint customer and role created with relation table">
       <change afterPath="$PROJECT_DIR$/ms-products/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev_gateway" />
+      </map>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev_notification" />
@@ -53,15 +67,49 @@
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanp/Documents/IntelliJ/CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;291b1bed30e7fc1805b7b43956f6c01c&quot;
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;2817b78b926db147cd79c681b73786af&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.compassuol.pb.challenge.msproducts.entity" />
+      <recent name="br.com.compassuol.pb.challenge.msproducts.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MsApiGatewayApplication">
+    <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-apiGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsNotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msnotification.MsNotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-products" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msproducts.MsProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.compassuol.pb.challenge.msproducts.entity" />
@@ -87,7 +135,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="" />
+      <changelist id="f79a9612-edf0-4b5b-9f2a-c94e8db1d537" name="Changes" comment="configurando propriedades basicas do gateway" />
       <created>1688409632407</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -95,6 +143,13 @@
       <workItem from="1688409633380" duration="337000" />
       <workItem from="1688410058383" duration="217000" />
       <workItem from="1688410558354" duration="44000" />
+      <workItem from="1688425791431" duration="1301000" />
+      <workItem from="1688417363327" duration="317000" />
+      <workItem from="1688471993049" duration="21000" />
+      <workItem from="1688486340211" duration="13314000" />
+      <workItem from="1688573829735" duration="11788000" />
+      <workItem from="1688683357919" duration="1633000" />
+      <workItem from="1688685014032" duration="3073000" />
       <workItem from="1688417363327" duration="317000" />
       <workItem from="1688471993049" duration="21000" />
       <workItem from="1688486340211" duration="13314000" />
@@ -121,11 +176,98 @@
       <option name="project" value="LOCAL" />
       <updated>1688584102829</updated>
     </task>
+    <task id="LOCAL-00001" summary="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
+      <created>1688496938413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496938413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed on service: update method, pagination">
+      <created>1688575909961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688575909961</updated>
+    </task>
+    <task id="LOCAL-00003" summary="endpoint customer and role created with relation table">
+      <created>1688584102829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688584102829</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dev_products" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="719cbfdf-189c-460f-ada7-504194175fc2">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="e3ac5b42-28b9-46e0-a785-290a2c2a19b9">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional" />
+    <MESSAGE value="fixed on service: update method, pagination" />
+    <MESSAGE value="endpoint customer and role created with relation table" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint customer and role created with relation table" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">

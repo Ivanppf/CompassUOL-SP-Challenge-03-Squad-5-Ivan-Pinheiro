@@ -1,9 +1,17 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/challenge03_microservices
-    username: postgres
-    password: password
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 server:
   port: 8082
+spring:
+  application:
+    name: ms-notification
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: partyhelper.repost@gmail.com
+    password: vbkovjcxgzmkznzt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+

@@ -6,6 +6,27 @@
       <list>
         <option value="$PROJECT_DIR$/ms-products/pom.xml" />
         <option value="$PROJECT_DIR$/ms-notification/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK"/>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ms-products/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-notification/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-apiGateway/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ms-products/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-notification/pom.xml" />
         <option value="$PROJECT_DIR$/ms-apiGateway/pom.xml" />
       </list>
     </option>
