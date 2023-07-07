@@ -16,13 +16,13 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @NotBlank
+    @NotBlank(message = "first name cannot be blank")
     private String firstName;
-    @NotBlank
+    @NotBlank(message = "last name cannot be blank")
     private String lastName;
-    @Email
+    @Email(message = "enter a valid email")
     private String email;
-    @NotBlank
+    @NotBlank(message = "password field cannot be blank")
     private String password;
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "customer_role",

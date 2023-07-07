@@ -34,7 +34,7 @@ public class CustomerService {
         Customer savedCustomer = customerRepository.save(customer);
         CustomerDTO customerDTO = new CustomerDTO();
         BeanUtils.copyProperties(savedCustomer, customerDTO);
-        rabbitTemplate.convertAndSend("notification", customer.getEmail());
+        rabbitTemplate.convertAndSend("notification", List.of(customer.getEmail(), "created"));
         return customerDTO;
     }
 
@@ -44,8 +44,9 @@ public class CustomerService {
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
         customer.setRoles(oldCustomer.getRoles());
+        customer.setPassword(oldCustomer.getPassword());
         customerRepository.save(customer);
-        rabbitTemplate.convertAndSend("notification", customer.getEmail());
+        rabbitTemplate.convertAndSend("notification", List.of(customer.getEmail(), "updated"));
         return customerDTO;
     }
 

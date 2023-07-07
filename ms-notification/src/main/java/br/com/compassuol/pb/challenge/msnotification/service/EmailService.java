@@ -8,6 +8,8 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class EmailService {
@@ -15,11 +17,11 @@ public class EmailService {
     private JavaMailSender emailSender;
 
     @RabbitListener(queues = "notification")
-    public void getMessage(String to) {
-        Email email = new Email("fromEmail", "fromName", "replyTo", to,
-                "message subject", "account created", "contentType");
-        System.out.println(email);
-//        sendEmail(email);
+    public void getMessage(List<String> to) {
+        Email email = new Email("fromEmail", "fromName", "replyTo", to.get(0),
+                "Notification API",
+                "Account " + to.get(1) + " successfully!\nThanks for using our service.", "contentType");
+        sendEmail(email);
     }
 
 
