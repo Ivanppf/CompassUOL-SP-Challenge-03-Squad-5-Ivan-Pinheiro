@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="endpoint customer and role created with relation table">
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" afterDir="false" />
+    <list default="true" id="d71a685b-e3de-4cc8-8762-46699e31215b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
       <recent name="br.com.compassuol.pb.challenge.msproducts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsProductsApplication">
+  <component name="RunManager">
     <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ms-apiGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />

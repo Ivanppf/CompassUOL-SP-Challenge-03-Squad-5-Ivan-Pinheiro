@@ -5,6 +5,7 @@ import br.com.compassuol.pb.challenge.msproducts.entity.Customer;
 import br.com.compassuol.pb.challenge.msproducts.repository.CustomerRepository;
 import br.com.compassuol.pb.challenge.msproducts.repository.RoleRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ public class CustomerService {
 
     private CustomerRepository customerRepository;
     private RoleRepository roleRepository;
+    private RabbitTemplate rabbitTemplate;
 
     public CustomerDTO findCustomer(int id) {
         CustomerDTO customerDTO = new CustomerDTO();
@@ -32,6 +34,7 @@ public class CustomerService {
         Customer savedCustomer = customerRepository.save(customer);
         CustomerDTO customerDTO = new CustomerDTO();
         BeanUtils.copyProperties(savedCustomer, customerDTO);
+        rabbitTemplate.convertAndSend("notification", customer.getEmail());
         return customerDTO;
     }
 
@@ -42,6 +45,7 @@ public class CustomerService {
         BeanUtils.copyProperties(customerDTO, customer);
         customer.setRoles(oldCustomer.getRoles());
         customerRepository.save(customer);
+        rabbitTemplate.convertAndSend("notification", customer.getEmail());
         return customerDTO;
     }
 
