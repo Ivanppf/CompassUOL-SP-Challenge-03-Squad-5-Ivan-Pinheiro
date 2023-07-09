@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Email {
+
     private String fromEmail;
     private String fromName;
     private String replyTo;
@@ -13,5 +14,4 @@ public class Email {
     private String subject;
     private String body;
     private String contentType;
-
 }

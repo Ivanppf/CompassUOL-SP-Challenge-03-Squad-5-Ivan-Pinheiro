@@ -13,11 +13,5 @@ import org.springframework.web.bind.annotation.RestController;
 public class NotificationController {
 
     private EmailService emailService;
-    @GetMapping
-    public String getMessage() {
-        Email email = new Email("fromEmail", "fromName", "replyTo", "partyhelper.repost@gmail.com", "message subject", "message body", "contentType");
-        emailService.sendEmail(email);
-        return "email enviado";
-    }
 
 }

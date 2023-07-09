@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037d267a-ae18-488e-9015-935374273824" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/exception/GlobalExceptionHandler.java" afterDir="false" />
+    <list default="true" id="037d267a-ae18-488e-9015-935374273824" name="Changes" comment="added exception handler to products endpoint and changed price on product entity to BigDecimal">
+      <change afterPath="$PROJECT_DIR$/ms-authorization/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/MsAuthorizationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/config/MsAuthorizationEmailPassAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/config/MsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/test/java/br/com/compassuol/pb/challenge/msauthorization/MsAuthorizationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/config/MsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/controller/NotificationControlelr.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/models/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/models/Email.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="review" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,28 +63,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "spring.configuration.checksum": "291b1bed30e7fc1805b7b43956f6c01c"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;48749b8037fdf78f753a5334234190f8&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.compassuol.pb.challenge.msproducts.entity" />
       <recent name="br.com.compassuol.pb.challenge.msproducts.dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.compassuol.pb.challenge.msproducts.config" />
+      <recent name="br.com.compassuol.pb.challenge.msauthorization.entity" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ms-apiGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsAuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-authorization" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msauthorization.MsAuthorizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsNotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msnotification.MsNotificationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,7 +137,9 @@
       <workItem from="1688471993049" duration="21000" />
       <workItem from="1688486340211" duration="13314000" />
       <workItem from="1688573829735" duration="11788000" />
-      <workItem from="1688746297976" duration="5339000" />
+      <workItem from="1688746297976" duration="12446000" />
+      <workItem from="1688859306008" duration="2154000" />
+      <workItem from="1688907274860" duration="4103000" />
     </task>
     <task id="LOCAL-00001" summary="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional">
       <created>1688496938413</created>
@@ -134,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688584102829</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added exception handler to products endpoint and changed price on product entity to BigDecimal">
+      <created>1688751861046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688751861046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +238,8 @@
     <MESSAGE value="feito todo o basico do products e do category com a relação muitos para muitos, tudo funcional" />
     <MESSAGE value="fixed on service: update method, pagination" />
     <MESSAGE value="endpoint customer and role created with relation table" />
-    <option name="LAST_COMMIT_MESSAGE" value="endpoint customer and role created with relation table" />
+    <MESSAGE value="added exception handler to products endpoint and changed price on product entity to BigDecimal" />
+    <option name="LAST_COMMIT_MESSAGE" value="added exception handler to products endpoint and changed price on product entity to BigDecimal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

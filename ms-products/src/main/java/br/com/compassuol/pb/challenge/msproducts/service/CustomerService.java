@@ -7,6 +7,8 @@ import br.com.compassuol.pb.challenge.msproducts.repository.RoleRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +20,7 @@ public class CustomerService {
     private CustomerRepository customerRepository;
     private RoleRepository roleRepository;
     private RabbitTemplate rabbitTemplate;
+    private PasswordEncoder passwordEncoder;
 
     public CustomerDTO findCustomer(int id) {
         CustomerDTO customerDTO = new CustomerDTO();
@@ -31,6 +34,7 @@ public class CustomerService {
             customer.setRoles(List.of(roleRepository.findByNameIgnoreCase("admin")));
         else
             customer.setRoles(List.of(roleRepository.findByNameIgnoreCase("operator")));
+        customer.setPassword(passwordEncoder.encode(customer.getPassword()));
         Customer savedCustomer = customerRepository.save(customer);
         CustomerDTO customerDTO = new CustomerDTO();
         BeanUtils.copyProperties(savedCustomer, customerDTO);
