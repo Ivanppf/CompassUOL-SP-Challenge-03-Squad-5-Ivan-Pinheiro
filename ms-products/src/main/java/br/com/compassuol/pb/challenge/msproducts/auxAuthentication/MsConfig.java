@@ -1,4 +1,4 @@
-package br.com.compassuol.pb.challenge.msproducts.config;
+package br.com.compassuol.pb.challenge.msproducts.auxAuthentication;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
