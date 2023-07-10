@@ -8,8 +8,8 @@ spring:
     defer-datasource-initialization: true
   datasource:
     url: jdbc:postgresql://localhost:5432/challenge03_microservices
-    username: postgres
-    password: password
+    username: 
+    password: 
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
   jackson:
