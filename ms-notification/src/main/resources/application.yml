@@ -8,15 +8,15 @@ spring:
     defer-datasource-initialization: true
   datasource:
     url: jdbc:postgresql://localhost:5432/challenge03_microservices
-    username: postgres
-    password: password
+    username: 
+    password: 
   application:
     name: ms-notification
   mail:
     host: smtp.gmail.com
     port: 587
-    username: partyhelper.repost@gmail.com
-    password: vbkovjcxgzmkznzt
+    username: 
+    password: 
     properties:
       mail:
         smtp:
