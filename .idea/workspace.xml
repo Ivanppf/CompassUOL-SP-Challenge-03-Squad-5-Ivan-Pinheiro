@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="037d267a-ae18-488e-9015-935374273824" name="Changes" comment="added exception handler to products endpoint and changed price on product entity to BigDecimal">
-      <change afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/auxAuthentication/MsAuthorizationEmailPassAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/repository/EmailRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/config/MsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/auxAuthentication/MsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/config/MsAuthorizationEmailPassAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/config/MsAuthorizationEmailPassAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-authorization/src/main/java/br/com/compassuol/pb/challenge/msauthorization/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-authorization/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-authorization/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/models/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/models/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/br/com/compassuol/pb/challenge/msnotification/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/auxAuthentication/MsAuthorizationEmailPassAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-products/src/main/resources/data.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +71,17 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/ivanp/Documents/IntelliJ/CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro/ms-products/src/main/java/br/com/compassuol/pb/challenge/msproducts/auxAuthentication",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "spring.configuration.checksum": "48749b8037fdf78f753a5334234190f8"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,12 +93,12 @@
       <recent name="C:\Users\ivanp\Documents\IntelliJ\CompassUOL-SP-Challenge-03-Squad-5-Ivan-Pinheiro\ms-products\src\main\java\br\com\compassuol\pb\challenge\msproducts\auxAuthentication" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.compassuol.pb.challenge.msproducts.auxAuthentication" />
       <recent name="br.com.compassuol.pb.challenge.msproducts.config" />
+      <recent name="br.com.compassuol.pb.challenge.msproducts.auxAuthentication" />
       <recent name="br.com.compassuol.pb.challenge.msauthorization.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsProductsApplication">
+  <component name="RunManager" selected="Spring Boot.MsAuthorizationApplication">
     <configuration name="MsApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ms-apiGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.compassuol.pb.challenge.msapigateway.MsApiGatewayApplication" />

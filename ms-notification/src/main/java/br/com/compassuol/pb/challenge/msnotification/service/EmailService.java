@@ -1,6 +1,7 @@
 package br.com.compassuol.pb.challenge.msnotification.service;
 
 import br.com.compassuol.pb.challenge.msnotification.models.Email;
+import br.com.compassuol.pb.challenge.msnotification.repository.EmailRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.mail.MailException;
@@ -15,6 +16,7 @@ import java.util.List;
 public class EmailService {
 
     private JavaMailSender emailSender;
+    private EmailRepository emailRepository;
 
     @RabbitListener(queues = "notification")
     public void getMessage(List<String> to) {
@@ -22,6 +24,7 @@ public class EmailService {
                 "Notification API",
                 "Account " + to.get(1) + " successfully!\nThanks for using our service.", "contentType");
         sendEmail(email);
+        emailRepository.save(email);
     }
 
 
@@ -29,7 +32,7 @@ public class EmailService {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(email.getFromEmail());
-            message.setTo(email.getTo());
+            message.setTo(email.getDestination());
             message.setSubject(email.getSubject());
             message.setText(email.getBody());
             emailSender.send(message);
