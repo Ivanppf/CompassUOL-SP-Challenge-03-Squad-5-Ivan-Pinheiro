@@ -10,6 +10,7 @@
 - Microservices
 - Authentication
 - Authorization
+- rabbitMQ
 "
 
 ## Stack used
@@ -23,3 +24,13 @@
 **Spring / Spring Boot**: Spring Boot 3 and Spring 6
 
 **Project manager:** Maven
+
+what is working:
+- http methods on every endpoint (GET product, POST product, ect)
+- email sending
+- rabbitMQ messages
+- basic authentication with password hashing storage working separately
+- API gateway to use the endpoints with only one port
+
+
+there will be updates on this challenge in another repository soon
